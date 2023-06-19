@@ -177,15 +177,20 @@ Finalmente se desea imprimir el costo del comedor. La cuota vale $ 1250 por día
 
 
 print("============== Listado de aulas =============")
-print("Día\tAula")
+print("Día\tAula") # /t tabulador 
+
+# Mientras 1 sea menor o igual a seis hace lo siguinte
+
 cont = 1
 while cont <= 6:
-    print(cont, end='')
-    if cont % 2 == 0:
-        print("\tA-300")
-    else:
+    print(cont, end='')     # end = "" te lo pone al lado
+    if cont % 2 == 0:       # par
+        print("\tA-300")    # volves a tabular para que te quede abajo de aula!
+    else:                   # impar
         print("\tA-315")
-    cont = cont + 1
+    cont += 1               # le sumas 1 al contador
+
+
 
 print()
 print("========== Carga de edades ==========")
@@ -196,6 +201,8 @@ while edad < 18:
     edad = int(input("Error! Ingrese una edad mayor o igual a 18: "))
 print("La edad ingresada es:", edad)
 print("Se ha ingresado la edad erróneamente", carga_erronea,"veces")
+
+
 
 print()
 print("========== Promedio de notas ==========")
@@ -219,3 +226,6 @@ costo_diario = 1250
 print("Dia\tCosto")
 for i in range(6):
     print(i+1,"\t$",(i+1)*costo_diario)
+    # A la i le pones un +1 porque el i empieza en 0
+    # tabulas
+    
