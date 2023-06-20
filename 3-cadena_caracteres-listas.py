@@ -1,4 +1,4 @@
-print("****** CADENAS DE CARACTERES ******")
+# print("****** CADENAS DE CARACTERES ******")
 
 ##### Escritura y concatenación
 
@@ -192,9 +192,9 @@ print("****** CADENAS DE CARACTERES ******")
 #Uso de min y max
 
 #Queres saber cual es el caracter mas grande
-cadena10="Python"
-print(max(cadena10))
-print(min(cadena10))
+# cadena10="Python"
+# print(max(cadena10))
+# print(min(cadena10))
 
 #Comparacion codigo ASCII
 
@@ -203,50 +203,118 @@ print(min(cadena10))
 
 # print("****** CADENAS: METODOS ******")
 
-#Join 
+# #Join 
+# cade= "Soraya"
+# print(cade)
+# na= "..".join(cade)
+# print(na)
 
 
 
-#Split
+# #Split
+# cadena11 = "Cadena de caracteres"
+# cadenaLista= cadena11.split(" ")
+# print(cadenaLista) #Separa cada palabra en elementos. Se armo un vector identificando los espacios
+# print(cadenaLista[2]) #ya lo toma como vector
+
 
 
 #Replace
+# cadena12= "Ya no se que poner. Mucho texto no es"
+# print(cadena12)
+# print(cadena12.replace("no","si")) #Me reemplaza los dos no
+# print(cadena12.replace("no","si",1)) 
+
 
 
 #Count e Index
 
+# cadena13= "Ya no se que poner. Mucho texto no es"
+# print("Cantidad de no:",cadena13.count("no"))
+# print("Priner no:",cadena13.index("no")) #Te dice donde esta
 
-#isalpha / isdigit / isalnum
+
+
+# #isalpha / isdigit / isalnum
+
+# cadena14 = "Python"
+# cadena15 = "Pthon2"
+
+# print(cadena14.isalpha()) # True:son todas letras
+# print(cadena15.isalpha()) # False son letras y numeros
+
+# cad1= "1234325"
+# cad2="121312412dsgsdgsdg"
+# cad3=""
+# # print(cad1.isdigit()) # true
+# # print(cad2.isdigit()) # false 
+# # print(cad3.isdigit())
+
+# print(cad1.isalnum()) # true
+# print(cad2.isalnum()) # true
+# print(cad3.isalnum()) # false
+
+
 
 
 #isupper / islower
+
+# cad4= "Python"
+# cad5="pthon"
+
+# print(cad4.isupper()) #False
+# print(cad4.islower()) #False
+# print(cad5.isupper()) #False
+# print(cad5.islower()) # True
 
 
 
 #center / ljust / rjust / zfill
 
+# cad4= "Python"
+
+# cad5 = cad4.center(16,"/")
+# print(cad5)
+
+# cad5 = cad4.ljust(16,"-")
+# print(cad5)
+
+# cad5 = cad4.rjust(16,"-")
+# print(cad5)
+
+
+
 
 #lstrip / rstrip / strip
+
 #lstrip quita elementos de la izquierda
 
+# cad= "--Hola Python- izquierda---"
+# print(cad.lstrip("-"))
 
-#rstrip quita elementos de la derecha
 
 
-#strip quita elementos de ambos lados
+# #rstrip quita elementos de la derecha
+# print(cad.rstrip("-"))
 
+# #strip quita elementos de ambos lados
+# print(cad.strip("-"))
 
 #find y rfind
-
-######################################################################
-
-#f-strings: ejemplo 1: cadenas
-
-
-#f-strings: ejemplo 2: números
+# cad="soraa perezosa"
+# print(cad.find("perezosa")) #atras pa delante
+# print(cad.rfind("soraa")) #primer posocion
 
 
-#f-strings: ejemplo 3
+############################  f-strings ##########################################
+
+
+# curso= "Full Stack Pthon"
+# alumna= "Soraya Perez"
+# print("Esta estudiando",curso,"la alumna",alumna)
+# print(f"Esta estudiando {curso} la alumna {alumna}")
+
+
 
 
 ######################################################################
