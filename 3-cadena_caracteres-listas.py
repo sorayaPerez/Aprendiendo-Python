@@ -272,7 +272,6 @@
 #center / ljust / rjust / zfill
 
 # cad4= "Python"
-
 # cad5 = cad4.center(16,"/")
 # print(cad5)
 
@@ -288,11 +287,8 @@
 #lstrip / rstrip / strip
 
 #lstrip quita elementos de la izquierda
-
 # cad= "--Hola Python- izquierda---"
 # print(cad.lstrip("-"))
-
-
 
 # #rstrip quita elementos de la derecha
 # print(cad.rstrip("-"))
@@ -300,7 +296,12 @@
 # #strip quita elementos de ambos lados
 # print(cad.strip("-"))
 
+
+
+
 #find y rfind
+
+# Si no lo encuentra devuelve -1.
 # cad="soraa perezosa"
 # print(cad.find("perezosa")) #atras pa delante
 # print(cad.rfind("soraa")) #primer posocion
@@ -315,6 +316,23 @@
 # print(f"Esta estudiando {curso} la alumna {alumna}")
 
 
+# #f-strings: ejemplo 2: números
+# base = 4
+# altura = 5
+# area = (4*5)/2
+# print(f'Base: {base}\nAltura: {altura}\nÁrea del triángulo: {area}')
+# print()
+
+# #f-strings: ejemplo 3
+# legajo = 12345
+# nombre = "Pablo"
+# apellido = "Picasso"
+# notas = [8, 7, 3]
+# promedio =sum(notas)/len(notas)
+
+# print(f"Legajo: {legajo}\nNombre completo: {apellido}, {nombre}\nNotas: {notas[0]}, {notas[1]}, {notas[2]}\nPromedio: {promedio}")
+
+
 
 
 ######################################################################
@@ -323,16 +341,60 @@
 
 #Creación e impresión de listas
 
+# numeros = [1,2,3,4,5] #Lista de números
+# dias = ["Lunes", "Martes", "Miércoles"] #Lista de strings
+# elementos = [] #Lista vacía
+# sublistas = [ [1,2,3] , [4,5,6] ] # lista de listas
+
+
 #Acceso a elementos
+
+# dias = ["Lunes", "Martes", "Miércoles"]
+# print(dias)
+# print(dias[0])
+# print(dias[1])
+# print(dias[-1])
+# print(dias[3])
+
 
 # Iterar sobre una lista (for)
 
+# lista = ["Shrek 1", "Shrek 2","Shrek 3","Shrek 4"]
+# suma = 0
+# print(len(lista))
+
+# for peliculas in lista:
+#     print(peliculas)
+
+
+# lista = [2,3,4,5,6]
+# suma = 0
+# for i in range(len(lista)):
+#     suma = suma + lista[i]
+# print(suma)
+
+
+
 # Iterar sobre una lista (while)
+
+# lista = [2,3,4,5,6]
+# suma = 0
+# i = 0
+# while i < len(lista):
+#     suma = suma + lista[i]
+#     i = i + 1
+# print(suma) # 20
+
+
 
 
 #Desempaquetado de listas
 
-#Desempaqueto la lista 2 en los 3 elementos
+# dias = ["Lunes", "Martes", "Miércoles"]
+# d1, d2, d3 = dias
+# print(d1)
+# print(d2)
+# print(d3)
 
 
 
@@ -342,30 +404,85 @@
 
 #Append agrega en la última posición
 
+# lista = [3,4,5]
+# lista.append(6)
+# print(lista)
+
+
 
 #Insert agrega en determinada posición
 
+# # insert(<pos>, <elemento>)
+# lista=[3,4,5]
+# lista.insert(0,2)
+# print(lista)
+# lista.insert(3,25)
+# print(lista)
 
-#Pop: no sólo elimina el elemento, sino que devuelve la posición
+
+
+#Pop: elimina el ultimo elemento, al no asignar posicion
+
+# lista = [6,9,8]
+# lista.pop()
+# print(lista)
+
+# lista = [3,4,5]
+# lista.pop(1)
+# print(lista) #Elimino el 4
+
+
 
 
 #Remove: elimino por su valor
 
+# lista = [3,4,5]
+# lista.remove(3)
+#Resultado: [4,5]
+
+
 
 #Index: devuelve la posición de determinado elemento
+# lista = [3,4,5]
+# print(lista.index(5))
+# print(lista.index(5,1)) #Empieza a buscar desde [1]
 
 
 
-#Count: Cuenta cantidad de elementos
+#Count: Cuenta las veces que aparece un elemento
+# lista = [3,4,5,3,5,8,5]
+# print(lista.count(5))
+# # Resultado: 3
+# print(lista.count(2))
+# # Resultado: 0
 
 
 #Reverse: Da vuelta los valores de una lista
+# lista = [3,4,5]
+# lista.reverse()
+# print(lista)
+# # Resulado: [5,4,3]
 
 
-#Sort: Ordena una lista
+#Sort: Ordena una lista de menor a mayor
+# lista = [5, 1, 7, 2]
+# lista.sort()
+# print(lista)
+# #Resultado: [1,2,5,7]
+
+# mayor a menor
+# lista = [5, 1, 7, 2]
+# lista.sort(reverse=True)
+# print(lista)
+# #Resultado: [7,5,2,1]
+
 
 
 #Clear: Vacía una lista
+# lista = [3,4,5]
+# lista.clear()
+# print(lista)
+# #Resultado: []
 
 
 ######################################################################
@@ -374,23 +491,39 @@
 
 #Concatenar
 
+# lista1 = [1,2,3]
+# lista2 = [4,5,6]
+# lista3 = lista1 + lista2
+# print(lista3)
 
-
-#Modificar valores por posición
 
 
 #Intercambiar valores
 
 
-#len (largo de la lista)
+
+
+# Len, Suma, máximo, mínimo y promedio
+
+# lista = [3,4,5,6]
+# print(len(lista))
+# print(max(lista))
+# print(min(lista))
+# print(sum(lista))
+# print((sum(lista)/len(lista)))
 
 
 
-#Suma, máximo, mínimo y promedio
+#Operadores de pertenencia 
 
-
-
-#list 
+# lista = list(range(6))
+# print(lista)
+# cadena = "Hola"
+# print(list(cadena))
+# lista2 = [3,4,5,6]
+# print(4 in lista2) #true
+# print(8 in lista2) # falsde
+# print("A" not in lista2) #t
 
 
 
@@ -398,7 +531,7 @@
 
 # print("****** DICCIONARIOS ******")
 
-# #Creación de diccionarios
+# #Creación de diccionarios (por extension)
 # vacio = {} 			                # diccionario vacío
 # dicc_uno = {'Juan': 56}			    # diccionario de un elemento
 # dicc_dos = {'Juan': 56, 'Ana': 15}  # diccionario de dos elementos
@@ -407,15 +540,22 @@
 # print(dicc_dos)
 # print()
 
+# #Creación de diccionarios (por compresion)
+# diccionario = {x: x ** 2 for x in (2, 4, 6)}
+
+
+
 # #Acceder a elementos
 # print(dicc_dos.items()) #Mostramos los pares clave-valor
 # for clave, valor in dicc_dos.items(): #otra manera de mostrar los pares clave-valor
 #     print(f'{clave}: {valor}')
 
+
 # print(dicc_dos.keys()) #Mostramos las claves
 # for i in dicc_dos.keys(): #Mostramos los valores
 #     print(dicc_dos[i], end=' ')
 # print()
+
 
 # #Modificar elementos
 # print("Edad de Juan:",dicc_dos["Juan"]) #Valor que corresponde a la clave "Juan"
@@ -463,6 +603,7 @@
 # print(tupla_cuatro[1]) 
 # #tupla_dos[0] = "Pablo" # Error
 # print()
+# print(tupla_dos[::]) # Acceso mediante rebanadas
 
 # #Otra forma de crear una tupla: empaquetar
 # nombre= 'Carlos'
@@ -480,6 +621,7 @@
 # print("Mes:",mm)
 # print("Año:",aa)
 # print()
+
 
 # ######################################################################
 
