@@ -46,3 +46,9 @@ por teclado. Finaliza el programa ingresando 0.
 # EJERCICIO: Ingresar cinco números y mostrar su suma
 
 
+""" Clase 4 """
+
+
+
+
+
